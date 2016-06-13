@@ -9,7 +9,7 @@ fMRI: SPM, FSL
 The fmri_spm.py integrates several interfaces to perform a first
 and second level analysis on a two-subject data set.  The tutorial can
 be found in the examples folder.  Run the tutorial from inside the
-nipype tutorial directory::
+nipype tutorial directory (`download <../users/pipeline_tutorial.html#step-0>`_::
 
     python fmri_spm.py
 
