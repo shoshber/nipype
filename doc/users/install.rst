@@ -56,7 +56,7 @@ Option 2: Install From Latest Source
 
 2. Install::
 
-        pip install -e
+        pip install -e .
 
    or::
 
