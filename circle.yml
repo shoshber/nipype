@@ -11,7 +11,8 @@ dependencies:
   pre:
     # Let CircleCI cache the apt archive
     - mkdir -p ~/.apt-cache/partial && sudo rm -rf /var/cache/apt/archives && sudo ln -s ~/.apt-cache /var/cache/apt/archives
-    - apt-config dump
+    - echo 'Acquire::Retries "3";' > configfile.conf
+    - apt-config dump --c configfile.conf
     - sudo apt-get -y update && sudo apt-get install -y wget bzip2
 
   override:
